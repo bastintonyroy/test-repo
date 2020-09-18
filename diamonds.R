@@ -6,3 +6,4 @@ ggplot(data = diamonds, aes(x = carat, y = price)) +
   xlab("Carat") +
   ylab("Price") +
   ggtitle("Price vs. Carat")
+  #New line - Ruban
