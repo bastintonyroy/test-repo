@@ -10,5 +10,3 @@ flights %>%
   count(month) %>% 
   ggplot(aes(x = as_factor(month), y = n)) +
   geom_col()
-
-# Adding a new comment!
