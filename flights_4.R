@@ -2,9 +2,13 @@ library(tidyverse)
 library(nycflights13)
 flights
 
-flights %>% 
+flight_counts <- flights %>% 
   group_by(month, year) %>% 
   summarise(count = n())
 
-#Testing what happens now???
 
+flight_counts %>% 
+  ggplot(aes(x = as.factor(month), y = count)) +
+  geom_col()
+
+#Testing what happens now???
